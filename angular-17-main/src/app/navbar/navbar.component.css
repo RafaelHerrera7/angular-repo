@@ -44,7 +44,6 @@ header{
     .desktop_menu{
         position: fixed;
         transition: 0.1s ease-in-out;
-
         right: -280px;
         top: 64px;
         background: #D1BEBA;
