@@ -10,19 +10,29 @@ import { Component } from '@angular/core';
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Cursos</a></li>
         <li><a href="#">Sobre Nosotros</a></li>
-        <li id="last-button"><a  href="#">Contacto</a></li>
+        @if (isLogged) {
+          <li id="last-button"><a  href="#"> <img src="https://github.com/rafaelherrera7.png" alt="alt"></a></li>
+        } @else {
+          <li id="last-button"><a href="#"><button (click)="isLogged = true">Log In</button></a></li>
+        }
+
+        
       </ul>
     </div>
 
   `,
   styles: `
+    img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+
+    }
     div {
       position: fixed;
       z-index: 100;
       width: 100%;
-
       background-color: blue;
-  
     }
     ul {
       list-style: none;
@@ -41,12 +51,13 @@ import { Component } from '@angular/core';
       text-decoration: none;
     }
     #last-button {
-
       float: right;
+      margin: 0;
+      padding: 0;
     }
     
   `
 })
 export class NavBarComponent {
-
+  isLogged = false;
 }
