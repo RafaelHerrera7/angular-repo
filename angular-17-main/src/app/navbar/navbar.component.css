@@ -1,12 +1,17 @@
 header{
-    padding: 10px;
     background: #D1BEBA;
+    padding: 0;
+    margin: 0;
 }
 
+
+
 .logo{
-    width: 86px;
-    height: 86px;
+    height: 40px;
     border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .logo:hover{
@@ -14,19 +19,20 @@ header{
 }
 
 .desktop_menu{
-    margin-top: 24px;
+    top: 50%;
 }
 
 .desktop_menu ul {
-    padding: 0;
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
 }
-
 .desktop_menu ul li {
     list-style-type: none;
     display: inline-block;
     font-size: 18px;
-    margin-left: 26px;
+    margin-left: 26px;    
 }
 
 .desktop_menu ul li:hover {
@@ -61,8 +67,7 @@ header{
     .menu-icon{
         display: block;
         color: white;
-        font-size: 40px;
-        padding-top: 10px;
+        font-size: 40px;        
     }
 
     .mobile_menu{
